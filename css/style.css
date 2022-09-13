@@ -1,0 +1,206 @@
+@font-face {
+  font-family: "Cerebri Sans";
+  src: url(../fonts/Cerebri-Sans/CerebriSans-Light.eot);
+  src: url(../fonts/Cerebri-Sans/CerebriSans-Light.ttf);
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cerebri Sans";
+  src: url(../fonts/Cerebri-Sans/CerebriSans-Regular.eot);
+  src: url(../fonts/Cerebri-Sans/CerebriSans-Regular.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cerebri Sans";
+  src: url(../fonts/Cerebri-Sans/CerebriSans-Bold.eot);
+  src: url(../fonts/Cerebri-Sans/CerebriSans-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+
+body {
+  /*background-color: #f9f7fe;*/
+  color: #272142;
+  font-family: "Cerebri Sans";
+  background-color: #e5e5f7;
+  background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+  background-size: 10px 10px;
+}
+
+body.dark {
+  /* filter: invert(1); */
+  background-image: radial-gradient(#47485e 0.5px, #2A2B2F 0.5px);
+}
+
+.change-theme-button {
+  text-align: center;
+}
+
+body.dark .container{
+  background:  #202124;
+}
+
+body.dark h2, body.dark p{
+  color:  #D3D1DB;
+}
+
+
+h1,
+h2 {
+  text-align: center;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+h1 {
+  color: #885df1;
+  font-size: 38px;
+  line-height: 48px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #272142;
+  font-family: "PT Mono", monospace;
+  line-height: 27px;
+}
+
+a {
+  color: #885df1;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+img {
+  border-radius: 12px;
+  max-width: 100%;
+
+}
+
+body.dark .change-theme-button {
+  background: #202124;
+  color: #fff;
+}
+
+.change-theme-button {
+  display: block;
+  background: #885df1;
+  color: white;
+  font-size: 16px;
+  font-family: "Cerebri Sans";
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 50px;
+  border: none;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+  margin:  0 auto;
+}
+
+.change-theme-button:hover {
+  opacity: .9;
+}
+
+body.dark .change-theme-button:hover {
+  opacity: .9;
+}
+
+.order-button {
+  background: #885df1;
+  color: white;
+  display: block;
+  margin: 30px auto;
+  width: 90%;
+  border-radius: 50px;
+  border: none;
+  font-size: 24px;
+  font-family: "Cerebri Sans";
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+  border:  1px solid transparent;
+}
+
+.order-button:hover {
+  opacity: 90%;
+  background: #fff;
+  color: #885df1 ;
+  border: 1px solid #885df1;
+}
+
+small {
+  text-align: center;
+  display: block;
+  font-size: 16px;
+  font-family: "PT Mono", monospace;
+}
+
+.container {
+  box-shadow: 0px 30px 50px rgba(65, 50, 100, 0.12);
+  margin: 50px auto;
+  background: #fff;
+  max-width: 550px;
+  padding: 40px;
+  border-radius: 16px;
+}
+
+.description {
+  padding-bottom: 20px;
+}
+
+.logo,
+.logo-light {
+  max-width: 200px;
+  display: block;
+  margin: 0 auto 40px;
+}
+
+.logo-light {
+  display: none;
+}
+
+body.dark .logo-light {
+  display: block;
+}
+body.dark .logo {
+  display: none;
+}
+
+.yogurt-picture {
+  margin: 15px 0;
+  background-origin: 10px 10px;
+  transition:  all 150ms ease-in-out;;
+
+}
+
+.yogurt-picture:hover {
+  transform: scale(1.5);
+
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap:  20px;
+}
+
+.grid img {
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salsa Dance | SheCodes Bassics Add-on Project</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="dark">
+    <a href="https://www.shecodes.io/" target="_blank">
+      <img src="https://s3.amazonaws.com/shecodesio-development/uploads/files/000/000/001/original/logo.png?1627901693" class="logo" alt="SheCodes Logo" />
+      <img src="images/logo-white.png" class="logo-light" alt="SheCodes Logo" />
+    </a>
+    <button id="change-theme-button" class="change-theme-button">
+      Change theme
+    </button>
+  <div class="container">
+    <h1>💃 What is Salsa? </h1>
+    <h2>Latin dance</h2>
+    <a href="https://www.shecodes.io/" target="_blank">
+      <img src="images/salsa-header.jpg" class="yogurt-picture" alt="Yogurt" />
+    </a>
+    <div class="grid">
+      <img src="images/salsa-grid-1.jpg" class="picture-grid" alt="Yogurt" />
+      <img src="images/salsa-grid-2.jpg" class="picture-grid" alt="Yogurt" />
+
+      <img src="images/salsa-grid-3.jpg" class="picture-grid" alt="Yogurt" />
+      <img src="images/salsa-grid-4.jpg" class="picture-grid" alt="Yogurt" />
+    </div>
+    
+    <div class="description">
+      <p>
+        Salsa is a Latin dance, associated with the music genre of the same name, which was first popularized in the United States in the 1960s in New York City. Salsa is an amalgamation of Cuban dances, such as mambo, pachanga and rumba, as well as American dances such as swing and tap
+        <br /><br />
+        📖
+        <a href="https://en.wikipedia.org/wiki/Salsa_(dance)">
+          <strong> Read on Wikipedia </strong>
+        </a>
+      </p>
+    </div>
+
+    <button id="order-button" class="order-button">Get in touch for a private class</button>
+
+
+    <p>
+      <small>
+        Coded by 👩‍💻
+        <a href="https://www.shecodes.io" target="_blank">SheCodes</a> with
+        HTML, CSS and JavaScript
+      </small>
+    </p>
+
+  </div>
+
+  <script>
+    function order() {
+      let quanty = prompt("Have you danced Salsa before?");
+      let name = prompt("What is your first name?");
+      let email = prompt("What is your email?");
+
+      alert(
+        "Thanks " +
+        name +
+        "! We'll be in touch soon with more details. Feel free to contact us if you have any questions hello@shecodes.io"
+        );
+    }
+
+    function toggleTheme() {
+      if (theme === "light") {
+        theme = "dark";
+        document.querySelector("body").classList.add("dark");
+      } else {
+        theme = "light";
+        document.querySelector("body").classList.remove("dark");
+      }
+    }
+
+
+
+    let button = document.querySelector("#order-button");
+    button.addEventListener("click", order);
+
+
+
+    let theme = "dark";
+    let themeButton = document.querySelector("#change-theme-button");
+    themeButton.addEventListener("click", toggleTheme)
+  </script>
+</body>
+</html>
