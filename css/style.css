@@ -29,13 +29,13 @@ body {
   color: #272142;
   font-family: "Cerebri Sans";
   background-color: #e5e5f7;
-  background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+  background-image: radial-gradient(#bdbfe3 0.5px, #e5e5f7 0.5px);
   background-size: 10px 10px;
 }
 
 body.dark {
   /* filter: invert(1); */
-  background-image: radial-gradient(#47485e 0.5px, #2A2B2F 0.5px);
+  background-image: radial-gradient(#271d3c 0.5px, #100d18 0.5px);
 }
 
 .change-theme-button {
@@ -43,11 +43,11 @@ body.dark {
 }
 
 body.dark .container{
-  background:  #202124;
+  background:  #1c1824;
 }
 
 body.dark h2, body.dark p{
-  color:  #D3D1DB;
+  color:  #d3cde0;
 }
 
 
@@ -59,9 +59,12 @@ h2 {
 }
 
 h1 {
-  color: #885df1;
+  color: #272142;
   font-size: 38px;
   line-height: 48px;
+}
+body.dark h1 {
+  color: #d3cde0;
 }
 
 h2 {
@@ -75,7 +78,12 @@ a {
   color: #885df1;
 }
 
+body.dark a {
+  color: #d3cde0;
+}
+
 a:hover {
+  color: #9d88ca;
   text-decoration: none;
 }
 
@@ -91,8 +99,12 @@ img {
 }
 
 body.dark .change-theme-button {
-  background: #202124;
+  background: #1c1824;
   color: #fff;
+}
+
+body.dark .change-theme-button:hover {
+  background: #885df1;
 }
 
 .change-theme-button {
@@ -152,12 +164,16 @@ small {
 }
 
 .container {
-  box-shadow: 0px 30px 50px rgba(65, 50, 100, 0.12);
+  box-shadow: 0px 30px 50px rgba(57, 48, 90, 0.1);
   margin: 50px auto;
   background: #fff;
   max-width: 550px;
   padding: 40px;
   border-radius: 16px;
+}
+
+body.dark .container {
+  box-shadow: 0px 30px 50px rgba(4, 2, 12, 0.5);
 }
 
 .description {
@@ -168,7 +184,7 @@ small {
 .logo-light {
   max-width: 200px;
   display: block;
-  margin: 0 auto 40px;
+  margin: 40px auto;
 }
 
 .logo-light {
